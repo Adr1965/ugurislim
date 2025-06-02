@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İslim ❤️ Uğur</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffe6eb, #fff);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #d6336c;
+      text-align: center;
+      padding: 30px;
+    }
+    h1 {
+      font-size: 3em;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    .gif {
+      width: 250px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    button {
+      margin: 10px;
+      padding: 15px 30px;
+      font-size: 1em;
+      border: none;
+      border-radius: 12px;
+      background-color: #ff4d79;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background-color: #e6004d;
+      transform: scale(1.05);
+    }
+    #message {
+      margin-top: 30px;
+      font-size: 1.3em;
+      background: #fff0f5;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    audio {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💖 İslim & Uğur 💖</h1>
+  <p>Birlikte her gün biraz daha güzelleşen bir aşkın hikayesi...</p>
+
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnA4c3NlOWRyNHdkcjlzd2sxczZvY2phZGlhYmltMjZneXFxM2UzcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l4Ki4biBSwhjyrS48/giphy.gif" class="gif" alt="çift gifi">
+
+  <div>
+    <button onclick="showMessage()">❤️ Aşklarını Oku ❤️</button>
+    <button onclick="showMessage()">🌹 Anılarını Hisset 🌹</button>
+    <button onclick="showMessage()">💌 Kalpten Gelenler 💌</button>
+    <button onclick="showMessage()">🌟 Sonsuz Sevgi 🌟</button>
+  </div>
+
+  <div id="message"></div>
+
+  <audio controls autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+    Tarayıcınız ses çalmayı desteklemiyor.
+  </audio>
+
+  <script>
+    const messages = [
+      "İslim'in gözleri, Uğur'un kalbine açılan en güzel pencereydi. 💕",
+      "Birlikte yağmurda ıslanmak bile eğlenceliydi, çünkü yan yana olmak yetiyordu. ☔❤️",
+      "Uğur, her sabah İslim'e günaydın dediğinde, güneş daha parlak doğardı. 🌞💗",
+      "İslim'in kahkahası, Uğur'un en sevdiği melodiydi. 🎶💓",
+      "Kalpleri bir kez sevdiyse birbirini, artık yolları hep birdi. 🌈👫",
+      "Uğur'un sarılışı, İslim'e tüm dünyanın güvende olduğunu hissettirirdi. 🤗💕",
+      "Zaman geçse de sevgileri her gün tazelenirdi. Çünkü gerçek aşk, eskimez. ⏳❤️",
+      "Senin gülüşün, dünyadaki tüm karanlığı aydınlatmaya yeter. 🌟",
+      "İslim ve Uğur'un kalpleri birbirine bağlı iki yıldız gibiydi. 🌌",
+      "Uğur, İslim'e her baktığında, yeniden âşık oluyordu. 💘",
+      "Seni tanıdığımdan beri kalbim yalnızca senin melodini çalıyor. 🎵",
+      "Her gün seninle uyanmak, hayatın en güzel mucizesi. ☀️💑",
+      "İslim'in varlığı, Uğur'un hayatına anlam kattı. ❤️",
+      "Sonsuza dek elini tutmak, en büyük hayalim. 👫",
+      "Aşkın en güzel hali sensin. Çünkü sen varsın. 💞"
+    ];
+
+    function showMessage() {
+      const messageBox = document.getElementById('message');
+      const random = Math.floor(Math.random() * messages.length);
+      messageBox.innerHTML = messages[random];
+    }
+  </script>
+
+</body>
+</html>
